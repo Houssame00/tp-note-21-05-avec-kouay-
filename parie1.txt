@@ -1,0 +1,29 @@
+q.1 : static
+q.2 : La méthode magique __toString() permet de définir la façon dont un objet est converti en chaîne de caractères.
+
+
+q.3 :  <?php
+$filename = 'statistique.txt';
+if (file_exists($filename)) {
+    $file = fopen($filename, 'r');
+    while (($line = fgets($file)) !== false) {
+        echo $line . "<br>";
+    }
+    fclose($file);
+} else {
+    echo "Le fichier n'existe pas.";
+}
+?>
+
+
+q.4 : La méthode est krsort().
+
+
+q.5 : 
+<?php
+$cookie_name = "couleur";
+$cookie_value = "ROUGE";
+$expiration_time = time() + (20 * 24 * 60 * 60); // 20 jours en secondes
+setcookie($cookie_name, $cookie_value, $expiration_time);
+?>
+
